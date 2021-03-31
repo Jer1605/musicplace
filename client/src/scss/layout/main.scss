@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.musicplace {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: $large;
+  padding: 0 1rem;
+  position: relative;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5 {font-family: 'Poppins', sans-serif;}
+.logo {
+  &-font{font-family: 'Major Mono Display', monospace;}
+}

@@ -1,0 +1,14 @@
+@mixin mosaic($space-x: $spacer-small, $margin-b: false, $padding-b:false) {
+  display: flex;
+  @if $space-x {
+    margin-left: (-1 * ($space-x / 2));
+    margin-right: (-1 * ($space-x / 2));
+  }
+  @if $margin-b {margin-bottom: -1 * ($margin-b)}
+  & > * {
+    @if $space-x {padding-left: ($space-x / 2);}
+    @if $space-x {padding-right: $space-x / 2;}
+    @if $margin-b {margin-bottom: $margin-b;}
+    @if $padding-b {padding-bottom: $padding-b;}
+  }
+}

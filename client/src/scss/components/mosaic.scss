@@ -37,7 +37,7 @@
   &[data-direction="column"]{flex-direction: column;}
 
 
-  &-item{
+  & > * {
 
     // Bases
     display: block;
@@ -80,25 +80,10 @@
 
     &[data-dock="right"] {margin-left: auto;}
   }
-
-  // Backgrounds & Overlay
-  &-background {@include cover(45rem, inherit);}
-
-  &-overlay {
-    @include absolute-full-width();
-    background: $grey-transparent;
-    opacity: 0;
-    transition: .2s ease;
-
-    &-text{@include absolute-center();}
-
-    &:hover{opacity: 1;}
-  }
-
 }
 
 // Responsive
-@media screen and (max-width: $break-small)
+@media screen and (max-width: $large)
 {
   .mosaic {
 
@@ -111,7 +96,7 @@
     &[data-s-valign="baseline"]{align-items: baseline;}
 
     &-overlay {opacity: 1;}
-    &-item{
+    & > *{
       .mosaic &[data-s-size="5"], .mosaic[data-s-size="5"] & {width: 5%;}
       .mosaic &[data-s-size="10"], .mosaic[data-s-size="10"] & {width: 10%;}
       .mosaic &[data-s-size="15"], .mosaic[data-s-size="15"] & {width: 15%;}
