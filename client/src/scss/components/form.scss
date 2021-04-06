@@ -1,0 +1,29 @@
+.input, button {
+  color: $color;
+  background: white;
+  padding: 1rem;
+  border-radius: .25rem;
+  border: none;
+  width: 100%;
+
+  &.input-shadow {box-shadow: 0 0 1rem .25rem rgba(255, 255, 255, 0.2);}
+  .input-icon & {padding-left: 4rem}
+
+  &-icon {
+    position: relative;
+    svg {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .4;
+    }
+  }
+}
+
+button {
+  background: $color2;
+  cursor: pointer;
+  color: white;
+  width: auto;
+}

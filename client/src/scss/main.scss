@@ -1,6 +1,8 @@
 @import "vendors/knacss";
+@import "variables";
 @import "mixins";
 @import "layout/main";
-@import "components/mosaic";
 
+@import "components/mosaic";
+@import "components/form";
 @import "components/header";

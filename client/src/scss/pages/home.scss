@@ -1,6 +1,16 @@
 .intro {
-  background-image: url('../../ressources/global/bg_space.jpeg');
-  height: 40rem;
+  position: relative;
+  //background-image: url('../../ressources/global/bg_space.jpeg');
+  height: calc(55vh);
   width: 100%;
   background-size: cover;
+  .search {
+    width: 100%;
+  }
+}
+
+@for $i from 0 through 18 {
+  .bg-#{$i} {
+    background-image: url('../../ressources/home/intro_#{$i}.jpg');
+  }
 }

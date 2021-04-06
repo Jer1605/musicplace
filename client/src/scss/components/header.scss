@@ -4,6 +4,11 @@ header {
   left: 0;
   width: 100%;
   background: white;
-  padding: 1rem 0;
-  a{color: #83379f;}
+  padding: $header_padding;
+  height: $header_height;
+  z-index: 2;
+  a {
+    color: $color;
+    &:hover {color: $color1;}
+  }
 }

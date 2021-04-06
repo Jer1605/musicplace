@@ -2,6 +2,9 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  padding-top: $header_height;
+  color: $color;
+  overflow-x: hidden;
 }
 
 .musicplace {
@@ -18,8 +21,23 @@ body{
   width: 100%;
 }
 
+.section {
+  padding: $padding_section;
+}
+
 h1, h2, h3, h4, h5 {font-family: 'Poppins', sans-serif;}
 .logo {
   &-font{font-family: 'Major Mono Display', monospace; margin-top: -0.5rem}
 }
-a {text-decoration: none;}
+a {
+  color: $color2;
+  text-decoration: none;
+  &:hover {text-decoration: none;}
+}
+
+.absolute-centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

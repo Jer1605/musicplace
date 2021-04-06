@@ -37,7 +37,7 @@
   &[data-direction="column"]{flex-direction: column;}
 
 
-  & > * {
+  &-item{
 
     // Bases
     display: block;
@@ -80,6 +80,7 @@
 
     &[data-dock="right"] {margin-left: auto;}
   }
+
 }
 
 // Responsive
@@ -96,7 +97,7 @@
     &[data-s-valign="baseline"]{align-items: baseline;}
 
     &-overlay {opacity: 1;}
-    & > *{
+    &-item{
       .mosaic &[data-s-size="5"], .mosaic[data-s-size="5"] & {width: 5%;}
       .mosaic &[data-s-size="10"], .mosaic[data-s-size="10"] & {width: 10%;}
       .mosaic &[data-s-size="15"], .mosaic[data-s-size="15"] & {width: 15%;}
