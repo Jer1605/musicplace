@@ -2,7 +2,7 @@ const options = [
     {label: 'Ofertas', value: 'ofertas'},
     {label: 'Cursos', value: 'cursos'},
     {label: 'Conciertos', value: 'conciertos'},
-    {label: 'Musicos', value: 'musicos'},
+    {label: 'Musicos', value: 'musicians'},
 ];
 
 const styles = {

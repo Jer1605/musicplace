@@ -6,7 +6,14 @@ body{
   color: $color;
   overflow-x: hidden;
 }
-
+.rounded {
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  border-radius: 100%;
+}
 .musicplace {
   display: flex;
   flex-direction: column;
@@ -26,6 +33,7 @@ body{
 }
 
 h1, h2, h3, h4, h5 {font-family: 'Poppins', sans-serif;}
+h3 {font-size: 1.5rem}
 .logo {
   &-font{font-family: 'Major Mono Display', monospace; margin-top: -0.5rem}
 }
