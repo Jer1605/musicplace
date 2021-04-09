@@ -3,11 +3,17 @@
 .intro {
   position: relative;
   //background-image: url('../../ressources/global/bg_space.jpeg');
-  height: calc(55vh);
+  height: calc(70vh);
   width: 100%;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
+  &-fixed {background-attachment: fixed;}
+  &-small { height: calc(40vh);}
+  &-title {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, .7);
+  }
   .search {
     width: 100%;
   }

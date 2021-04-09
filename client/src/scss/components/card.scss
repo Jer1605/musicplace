@@ -1,5 +1,21 @@
 @import "../variables";
 .card {
-  padding: 1rem;
-  border: 1px solid #efefef;
+  padding: 1rem 0;
+  &.bar{
+    &-purple{
+      padding-left: 2rem;
+      border-left: .4rem solid $color1;
+    }
+    &-green{
+      padding-left: 2rem;
+      border-left: .4rem solid $color2;
+    }
+  }
+  &.overable
+  {
+    transition: .1s ease;
+    cursor: pointer;
+    opacity: .9;
+    &:hover {opacity: 1;}
+  }
 }

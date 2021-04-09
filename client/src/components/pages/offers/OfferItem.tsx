@@ -3,17 +3,17 @@ import RoundedImage from "../../common/RoundedImage";
 import Card from "../../common/Card";
 import '../../../scss/components/card.scss';
 
-const MusicianItem : React.FunctionComponent = () => {
+const OfferItem : React.FunctionComponent = () => {
     return (
         <div className={'card'}>
-            <Card link={'Musician'}>
+            <Card link={'Offer'}>
                 <div className={'mosaic'} data-valign={'center'}>
                     <div className={'mosaic-item'}>
-                        <RoundedImage image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqL5qthMzUhxj8OXgxtB5JyqvYFnwKsakOw&usqp=CAU'} />
+                        <RoundedImage image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1cTCoNV_S0wukTyPFw8ggswPX3LprZzu2A&usqp=CAU'} />
                     </div>
                     <div className={'mosaic-item'} data-amplitud={'grow'}>
                         <p className={'mb-0'}><strong>Titre</strong></p>
-                        <p><small>Style1, Style2, Style3</small></p>
+                        <p><small>Offer description...</small></p>
                     </div>
                     <div className={'mosaic-item'}>
                         <p><small>Madrid</small></p>
@@ -24,4 +24,4 @@ const MusicianItem : React.FunctionComponent = () => {
     )
 }
 
-export default MusicianItem;
+export default OfferItem;
