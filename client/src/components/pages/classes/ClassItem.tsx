@@ -7,7 +7,7 @@ const ClassItem : React.FunctionComponent = () => {
     return (
         <div className={'card'}>
             <Card link={'Class'}>
-                <div className={'mosaic'} data-valign={'center'}>
+                <div className={'mosaic'} data-space={2}>
                     <div className={'mosaic-item'}>
                         <RoundedImage image={'https://lh3.googleusercontent.com/proxy/i9o9JTS1beFuKjZ7YVTusaodVr_PNUmbEn5oMfdAQJkw3SLLk8ygaKZp9OUlSZgEK578xIHynRvOk1rHJKQbBC474eyWj2ToKaWHaL3gP10woJgcTXR4WuYMbhwv15ZYssATtsRuFQ'} />
                     </div>

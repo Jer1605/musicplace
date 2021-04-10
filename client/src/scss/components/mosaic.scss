@@ -9,6 +9,8 @@
   &[data-space="3"] {@include mosaic(3rem)}
   &[data-space="3.5"] {@include mosaic(3.5rem)}
   &[data-space="5"] {@include mosaic(5rem)}
+  &[data-space="4"] {@include mosaic(4rem)}
+  &[data-space="4.5"] {@include mosaic(4.5rem)}
   &[data-space="5.5"] {@include mosaic(5.5rem)}
   &[data-space="6"] {@include mosaic(6rem)}
   &[data-space="6.5"] {@include mosaic(6.5rem)}
@@ -41,6 +43,8 @@
 
     // Bases
     display: block;
+
+    &[data-alignself="center"] {align-self: center;}
 
     // Sizes
     .mosaic &[data-size="5"], .mosaic[data-size="5"] > & {width: 5%;}

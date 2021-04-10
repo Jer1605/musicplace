@@ -6,7 +6,7 @@ type ClassesProps = {
     columns?: number,
 }
 
-const Classes : React.FunctionComponent<ClassesProps> = ({length, columns} : ClassesProps) => {
+const ClassesList : React.FunctionComponent<ClassesProps> = ({length, columns} : ClassesProps) => {
     return (
         <div className={'musicians'}>
             <h1>Cursos</h1>
@@ -19,4 +19,4 @@ const Classes : React.FunctionComponent<ClassesProps> = ({length, columns} : Cla
     )
 }
 
-export default Classes;
+export default ClassesList;

@@ -7,7 +7,7 @@ const OfferItem : React.FunctionComponent = () => {
     return (
         <div className={'card'}>
             <Card link={'Offer'}>
-                <div className={'mosaic'} data-valign={'center'}>
+                <div className={'mosaic'} data-space={2}>
                     <div className={'mosaic-item'}>
                         <RoundedImage image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1cTCoNV_S0wukTyPFw8ggswPX3LprZzu2A&usqp=CAU'} />
                     </div>

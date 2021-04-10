@@ -1,22 +1,20 @@
-import React from 'react';
-import MusicianItem from "./MusicianItem";
+import React from "react";
+import MusiciansSearch from "./MusiciansSearch";
+import MusiciansList from "./MusiciansList";
 
-type MusiciansProps = {
-    length?: number,
-    columns?: number,
-}
-
-const Musicians : React.FunctionComponent<MusiciansProps> = ({length, columns} : MusiciansProps) => {
-    return (
-        <div className={'musicians'}>
-            <h1>Musicos y Bandas</h1>
-            <section className={`grid grid-cols-${columns || 1} gap-10`}>
-                <MusicianItem />
-                <MusicianItem />
-                <MusicianItem />
-            </section>
-        </div>
-    )
+const Musicians : React.FunctionComponent = () => {
+    return <section className={'musicians'}>
+        <section className={`intro intro-small bg-1`}>
+            <h1 className={'absolute-centered text-center intro-title'}>Encuentra otros musicos en tu zona</h1>
+        </section>
+        <section className={'section'}>
+            <div className={'container'}>
+                <h1>Musicos y bandas</h1>
+                <MusiciansSearch />
+                <MusiciansList />
+            </div>
+        </section>
+    </section>
 }
 
 export default Musicians;

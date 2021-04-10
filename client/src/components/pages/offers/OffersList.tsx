@@ -6,7 +6,7 @@ type OffersProps = {
     columns?: number,
 }
 
-const Offers : React.FunctionComponent<OffersProps> = ({length, columns} : OffersProps) => {
+const OffersList : React.FunctionComponent<OffersProps> = ({length, columns} : OffersProps) => {
     return(
         <div className={'offers'}>
             <h1>Ofertas</h1>
@@ -19,4 +19,4 @@ const Offers : React.FunctionComponent<OffersProps> = ({length, columns} : Offer
     )
 }
 
-export default Offers;
+export default OffersList;

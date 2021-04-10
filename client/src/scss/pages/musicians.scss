@@ -1,0 +1,14 @@
+@import "src/scss/variables";
+.musicians {
+  &-search{
+    &-label {
+      color: $color1;
+      margin-bottom: .5rem;
+    }
+    background: $color1_light;
+    padding: 2rem;
+    border: 1px solid $color1;
+    border-radius: .2rem;
+    margin-bottom: $spacer-big;
+  }
+}

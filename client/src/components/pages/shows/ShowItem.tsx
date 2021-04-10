@@ -7,7 +7,7 @@ const ShowItem : React.FunctionComponent = () => {
     return (
         <div className={'card'}>
             <Card link={'Show'}>
-                <div className={'mosaic'} data-valign={'center'}>
+                <div className={'mosaic'} data-space={2}>
                     <div className={'mosaic-item'}>
                         <RoundedImage image={'https://media.timeout.com/images/105310261/image.jpg'} />
                     </div>

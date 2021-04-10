@@ -3,16 +3,16 @@ import '../../scss/pages/home.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Select from "react-select";
 
-import reactSelectCategoriesConfiguration from "../../config/reactSelectCategories";
-import Musicians from "./musicians/Musicians";
-import Offers from "./offers/Offers";
-import Shows from "./shows/Shows";
-import Classes from "./classes/Classes";
+import selectCategories from "../../config/selects/categories";
+import MusiciansList from "./musicians/MusiciansList";
+import OffersList from "./offers/OffersList";
+import ShowsList from "./shows/ShowsList";
+import ClassesList from "./classes/ClassesList";
 
 const Home: React.FunctionComponent = () => {
     return(
         <div className={'home'}>
-            <section className={`intro intro-fixed bg-${Math.floor(Math.random() * 14)}`}>
+            <section className={`intro intro-fixed bg-9`}>
                 <div className={'absolute-centered search'}>
                     <div className={'container'}>
                     <div className={'mosaic'} data-halign={'center'}>
@@ -21,7 +21,7 @@ const Home: React.FunctionComponent = () => {
                             <input type={'text'} className={'input'} placeholder={'Jazz, guitaristas, amplificador...'} />
                         </div>
                         <div className={'mosaic-item'} data-size={15}>
-                            <Select {...reactSelectCategoriesConfiguration} />
+                            <Select {...selectCategories} />
                         </div>
                         <div className={'mosaic-item'} data-size={15}>
                             <button>Buscar</button>
@@ -32,17 +32,21 @@ const Home: React.FunctionComponent = () => {
             </section>
             <section className={'container section'}>
                 <div className={'grid grid-cols-2 gap-200'}>
-                    <Musicians />
-                    <Offers />
+                    <MusiciansList title={'Musicos y bandas'} preview={true} />
+                    <OffersList />
                 </div>
             </section>
             <section className={`intro intro-small bg-${Math.floor(Math.random() * 14)}`}>
-                <h1 className={'absolute-centered text-center intro-title'}>Encuentra otros musicos en tu zona</h1>
+                <h1 className={'absolute-centered text-center intro-title'}>
+                    <blockquote>
+                        <p>Encuentra musicos, busca material, apuntate a una clase o vete a conciertos en Madrid !</p>
+                    </blockquote>
+                </h1>
             </section>
             <section className={'container section'}>
                 <div className={'grid grid-cols-2 gap-200'}>
-                    <Shows />
-                    <Classes />
+                    <ShowsList />
+                    <ClassesList />
                 </div>
             </section>
         </div>

@@ -6,7 +6,7 @@ type ShowsProps = {
     columns?: number,
 }
 
-const Shows : React.FunctionComponent<ShowsProps> = ({length, columns} : ShowsProps) => {
+const ShowsList : React.FunctionComponent<ShowsProps> = ({length, columns} : ShowsProps) => {
     return (
         <div className={'musicians'}>
             <h1>Shows</h1>
@@ -19,4 +19,4 @@ const Shows : React.FunctionComponent<ShowsProps> = ({length, columns} : ShowsPr
     )
 }
 
-export default Shows;
+export default ShowsList;

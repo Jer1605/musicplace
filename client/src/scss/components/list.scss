@@ -1,0 +1,26 @@
+@import "src/scss/variables";
+
+.list {
+  &-item {
+    position: relative;
+
+  }
+  &-description{
+
+  }
+  .card.overable {
+    cursor: pointer;
+    &:hover {
+      &:after{
+        position: absolute;
+        content: "";
+        width: calc(100% + 3rem);
+        height: calc(100% + 1rem);
+        background: $color1_light;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
