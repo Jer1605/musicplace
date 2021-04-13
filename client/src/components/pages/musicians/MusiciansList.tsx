@@ -1,22 +1,25 @@
 import React from 'react';
 import MusicianItem from "./MusicianItem";
+import List from "../../common/List";
 
 type MusiciansProps = {
     title?: string,
-    length?: number,
+    itemPerPage?: number,
+    pagination?: boolean,
     columns?: number,
     preview?: boolean,
 }
 
-const MusiciansList : React.FunctionComponent<MusiciansProps> = ({title, length, columns, preview} : MusiciansProps) => {
+const MusiciansList : React.FunctionComponent<MusiciansProps> = ({title, itemPerPage, columns, preview, pagination} : MusiciansProps) => {
+
     return (
-        <div className={'musiciansList'}>
+        <div className={'musicians-preview'}>
             {title ? <h1>{title}</h1> : null}
-            <section className={`grid grid-cols-${columns || 1} gap-20 list`}>
+            <List className={'musicians-list'} itemPerPage={itemPerPage} columns={columns} pagination={pagination}>
                 <MusicianItem preview={preview}/>
                 <MusicianItem preview={preview}/>
                 <MusicianItem preview={preview}/>
-            </section>
+            </List>
         </div>
     )
 }

@@ -1,20 +1,24 @@
 import React from "react";
+import List from "../../common/List";
 import OfferItem from "./OfferItem";
 
 type OffersProps = {
-    length?: number,
+    title?: string,
+    itemPerPage?: number,
+    pagination?: boolean,
     columns?: number,
+    preview?: boolean,
 }
 
-const OffersList : React.FunctionComponent<OffersProps> = ({length, columns} : OffersProps) => {
+const OffersList : React.FunctionComponent<OffersProps> = ({title, itemPerPage, columns, preview, pagination} : OffersProps) => {
     return(
         <div className={'offers'}>
-            <h1>Ofertas</h1>
-            <section className={`grid grid-cols-${columns || 1} gap-10`}>
-                <OfferItem />
-                <OfferItem />
-                <OfferItem />
-            </section>
+            {title ? <h1>{title}</h1> : null}
+            <List className={'musicians-list'} itemPerPage={itemPerPage} columns={columns} pagination={pagination}>
+                <OfferItem preview={preview}/>
+                <OfferItem preview={preview}/>
+                <OfferItem preview={preview}/>
+            </List>
         </div>
     )
 }

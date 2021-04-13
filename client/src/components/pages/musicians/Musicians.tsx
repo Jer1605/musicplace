@@ -11,7 +11,7 @@ const Musicians : React.FunctionComponent = () => {
             <div className={'container'}>
                 <h1>Musicos y bandas</h1>
                 <MusiciansSearch />
-                <MusiciansList />
+                <MusiciansList pagination={true} itemPerPage={10} />
             </div>
         </section>
     </section>

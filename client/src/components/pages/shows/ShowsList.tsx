@@ -1,20 +1,24 @@
-import React from 'react';
+import React from "react";
+import List from "../../common/List";
 import ShowItem from "./ShowItem";
 
 type ShowsProps = {
-    length?: number,
+    title?: string,
+    itemPerPage?: number,
+    pagination?: boolean,
     columns?: number,
+    preview?: boolean,
 }
 
-const ShowsList : React.FunctionComponent<ShowsProps> = ({length, columns} : ShowsProps) => {
-    return (
-        <div className={'musicians'}>
-            <h1>Shows</h1>
-            <section className={`grid grid-cols-${columns || 1} gap-10`}>
-                <ShowItem />
-                <ShowItem />
-                <ShowItem />
-            </section>
+const ShowsList : React.FunctionComponent<ShowsProps> = ({title, itemPerPage, columns, preview, pagination} : ShowsProps) => {
+    return(
+        <div className={'Shows'}>
+            {title ? <h1>{title}</h1> : null}
+            <List className={'show-list'} itemPerPage={itemPerPage} columns={columns} pagination={pagination}>
+                <ShowItem preview={preview}/>
+                <ShowItem preview={preview}/>
+                <ShowItem preview={preview}/>
+            </List>
         </div>
     )
 }

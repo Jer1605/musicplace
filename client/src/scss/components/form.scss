@@ -19,6 +19,11 @@
       opacity: .4;
     }
   }
+
+}
+
+.form {
+  &-line {margin-bottom: 1rem;}
 }
 
 button {
@@ -26,4 +31,8 @@ button {
   cursor: pointer;
   color: white;
   width: auto;
+}
+
+input[type="date"].input {
+  padding: 0.95rem 1rem;
 }

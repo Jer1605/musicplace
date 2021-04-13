@@ -1,20 +1,24 @@
-import React from 'react';
+import React from "react";
+import List from "../../common/List";
 import ClassItem from "./ClassItem";
 
 type ClassesProps = {
-    length?: number,
+    title?: string,
+    itemPerPage?: number,
+    pagination?: boolean,
     columns?: number,
+    preview?: boolean,
 }
 
-const ClassesList : React.FunctionComponent<ClassesProps> = ({length, columns} : ClassesProps) => {
-    return (
-        <div className={'musicians'}>
-            <h1>Cursos</h1>
-            <section className={`grid grid-cols-${columns || 1} gap-10`}>
-                <ClassItem />
-                <ClassItem />
-                <ClassItem />
-            </section>
+const ClassesList : React.FunctionComponent<ClassesProps> = ({title, itemPerPage, columns, preview, pagination} : ClassesProps) => {
+    return(
+        <div className={'classes'}>
+            {title ? <h1>{title}</h1> : null}
+            <List className={'musicians-list'} itemPerPage={itemPerPage} columns={columns} pagination={pagination}>
+                <ClassItem preview={preview}/>
+                <ClassItem preview={preview}/>
+                <ClassItem preview={preview}/>
+            </List>
         </div>
     )
 }

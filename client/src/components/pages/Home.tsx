@@ -33,7 +33,7 @@ const Home: React.FunctionComponent = () => {
             <section className={'container section'}>
                 <div className={'grid grid-cols-2 gap-200'}>
                     <MusiciansList title={'Musicos y bandas'} preview={true} />
-                    <OffersList />
+                    <OffersList title={'Ofertas'} preview={true}  />
                 </div>
             </section>
             <section className={`intro intro-small bg-${Math.floor(Math.random() * 14)}`}>
@@ -45,8 +45,8 @@ const Home: React.FunctionComponent = () => {
             </section>
             <section className={'container section'}>
                 <div className={'grid grid-cols-2 gap-200'}>
-                    <ShowsList />
-                    <ClassesList />
+                    <ShowsList title={'Conciertos'} preview={true} />
+                    <ClassesList title={'Cursos'} preview={true} />
                 </div>
             </section>
         </div>

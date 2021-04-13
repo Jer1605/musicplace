@@ -1,0 +1,13 @@
+@import "../variables";
+.pagination {
+  width: 25rem;
+  background: $color1_light;
+  color: $color1;
+  border-radius: .2rem;
+  margin: $spacer-medium auto 0 auto;
+  &-page, &-previous, &-next {
+    padding: 1rem;
+    color: $color1;
+    &:hover {color: $color2}
+  }
+}

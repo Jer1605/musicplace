@@ -12,7 +12,7 @@ type MusicianItemProps = {
 const MusicianItem : React.FunctionComponent<MusicianItemProps> = ({preview}: MusicianItemProps) => {
     return (
         <div className={'list-item'}>
-            <Card link={'Musician'}>
+            <Card link={'musicos/musicos_id'}>
                 <div className={'mosaic'} data-space={2}>
                     <div className={'mosaic-item'} data-size={!preview ? 15 : ''}>
                         <RoundedImage image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqL5qthMzUhxj8OXgxtB5JyqvYFnwKsakOw&usqp=CAU'} />

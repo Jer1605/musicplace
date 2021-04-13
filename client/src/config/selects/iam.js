@@ -29,9 +29,13 @@ const styles = {
         padding: '.22rem',
         color: '#333',
     }),
+    option: (providedValue) => ({
+        ...providedValue,
+        color: '#333',
+    }),
 
 }
 
-const placeholder = 'Selectionnar';
+const placeholder = 'Instrumento';
 
 export default {options, styles, placeholder};
