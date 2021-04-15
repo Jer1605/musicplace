@@ -1,6 +1,53 @@
 @import "../variables";
 
+$input_height: 20%;
+$messenger_width: 40rem;
+
 .messenger {
+  position: fixed;
+  background: white;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: -0.05rem 0rem 3rem rgba(0, 0, 0, 0.1);
   padding: $padding-medium;
-  background: $color1_light;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 45rem;
+  transition: transform .2s ease;
+  &[aria-hidden="true"] {transform: translateX(100%)}
+
+  .scrollarea {padding-right: 1.5rem;}
+  &-messages {padding-bottom: 3rem}
+  &-message {
+    background: $blue;
+    color: white;
+    margin-bottom: 1rem;
+    padding: $padding;
+    border-radius: .3rem .3rem .3rem 0;
+    min-width: 15rem;
+    order: 1;
+    &-guest {
+      background: $color1_light;
+      color: $color;
+      order: 0;
+    }
+  }
+
+  &-input {
+    background: white;
+    height: 5rem;
+    min-height: 5rem;
+    textarea, button {
+      height:100%;
+      max-height: 100%;
+    }
+    textarea {
+      border: 1px solid $grey_light;
+      border-radius: .3rem;
+      padding: $padding;
+    }
+  }
 }

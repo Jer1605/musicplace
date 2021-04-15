@@ -11,21 +11,29 @@ import Classes from "./components/pages/classes/Classes";
 import Shows from "./components/pages/shows/Shows";
 import Login from "./components/pages/login/Login";
 import Musician from "./components/pages/musicians/Musician";
+import Class from "./components/pages/classes/Class";
+import Show from "./components/pages/shows/Show";
+import Offer from "./components/pages/offers/Offer";
 
 function App() {
   return (
-    <div className="musicplace">
+    <div className="colibri">
         <Router>
             <Header />
-            <Switch>
-                <Route exact path='/'><Home /></Route>
-                <Route exact path='/musicos'><Musicians /></Route>
-                <Route exact path='/musicos/:id'><Musician /></Route>
-                <Route exact path='/ofertas'><Offers /></Route>
-                <Route exact path='/cursos'><Classes /></Route>
-                <Route exact path='/conciertos'><Shows /></Route>
-                <Route exact path='/login'><Login /></Route>
-            </Switch>
+            <div className={'main'}>
+                <Switch>
+                    <Route exact path='/'><Home /></Route>
+                    <Route exact path='/musicos'><Musicians /></Route>
+                    <Route exact path='/musicos/:id'><Musician /></Route>
+                    <Route exact path='/ofertas'><Offers /></Route>
+                    <Route exact path='/ofertas/:id'><Offer /></Route>
+                    <Route exact path='/cursos'><Classes /></Route>
+                    <Route exact path='/cursos/:id'><Class /></Route>
+                    <Route exact path='/conciertos'><Shows /></Route>
+                    <Route exact path='/conciertos/concierto_id'><Show /></Route>
+                    <Route exact path='/login'><Login /></Route>
+                </Switch>
+            </div>
             <Footer />
         </Router>
     </div>

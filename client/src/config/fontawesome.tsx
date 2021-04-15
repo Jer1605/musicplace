@@ -6,6 +6,13 @@ import {
     faChevronRight,
     faChevronLeft,
     faLock,
+    faComment,
+    faCommentAlt,
+    faHandSparkles,
+    faStar,
+    faStarHalf,
+    faKiwiBird,
+    faUsers,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -15,4 +22,11 @@ library.add(
     faChevronRight,
     faChevronLeft,
     faLock,
+    faComment,
+    faCommentAlt,
+    faHandSparkles,
+    faStar,
+    faStarHalf,
+    faKiwiBird,
+    faUsers,
 );

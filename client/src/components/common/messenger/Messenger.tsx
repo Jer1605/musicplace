@@ -6,8 +6,9 @@ import MessengerMain from "./MessengerMain";
 
 const Messenger: React.FunctionComponent = () => {
     const logged = true;
+    const hidden = true;
 
-    return logged ? <MessengerMain /> : <MessengerNotLogged />;
+    return logged ? <MessengerMain hidden={hidden} /> : <MessengerNotLogged hidden={hidden} />;
 }
 
 export default Messenger;

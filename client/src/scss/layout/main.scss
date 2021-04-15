@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
-
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#root, .colibri{min-height: 100vh}
 body{
   font-family: 'Roboto', sans-serif;
-  padding-top: $header_height;
+
   color: $color;
   overflow-x: hidden;
 }
@@ -14,10 +20,14 @@ body{
   display: inline-block;
   border-radius: 100%;
 }
-.musicplace {
+.colibri {
   display: flex;
+  padding-top: $header_height;
   flex-direction: column;
+  //justify-content: space-between;
 }
+
+.main {flex-grow: 1;}
 
 .container {
   //overflow-x: hidden;
@@ -55,6 +65,7 @@ a {
 
 // Colors
 .grey {color: $grey;}
+.grey-light {color: $grey_light;}
 .astyle {
   color: $color;
   padding: inherit;

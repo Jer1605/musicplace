@@ -15,9 +15,14 @@ const Header: React.FunctionComponent = () => {
                             <div className={'mosaic-item'}><Link to={'/cursos'}>Cursos</Link></div>
                             <div className={'mosaic-item'}><Link to={'/conciertos'}>Conciertos</Link></div>
                             <div className={'mosaic-item'} data-dock={'right'}>
-                                <Link to={'/login'}>
-                                    <FontAwesomeIcon icon={['fas', 'user']} />
-                                </Link>
+                                <div className={'mosaic'}>
+                                    <div className={'mosaic-item'}>
+                                        <Link to={'/login'}><FontAwesomeIcon icon={['fas', 'comment']} /></Link>
+                                    </div>
+                                    <div className={'mosaic-item'}>
+                                        <Link to={'/login'}><FontAwesomeIcon icon={['fas', 'user']} /></Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </nav>
