@@ -15,6 +15,7 @@ const Show: React.FunctionComponent = () => {
                 <div className={'mosaic-item'} data-amplitud={'grow'}>
                     <div className={'detail-data mt-3'}>
                         <p className={'detail-date'}><strong>14.04.2021</strong> - Madrid - 21h30</p>
+                        <p className={'detail-date'}><strong>Precio:</strong> 20€</p>
                         <p><FontAwesomeIcon icon={['fas', 'map-marker-alt']} /> EL JUNCO JAZZ CLUB</p>
                         <p className={'detail-styles'}>Pop, Jazz, Groove</p>
                         <p className={'description'}>

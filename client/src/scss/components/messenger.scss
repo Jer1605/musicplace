@@ -11,16 +11,23 @@ $messenger_width: 40rem;
   right: 0;
   z-index: 2;
   box-shadow: -0.05rem 0rem 3rem rgba(0, 0, 0, 0.1);
-  padding: $padding-medium;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
-  width: 45rem;
+  width: 50rem;
   transition: transform .2s ease;
-  &[aria-hidden="true"] {transform: translateX(100%)}
+  display: flex;
+  padding: 1rem;
 
-  .scrollarea {padding-right: 1.5rem;}
-  &-messages {padding-bottom: 3rem}
+  &-sessions {padding-right: 1rem;}
+  &-content {padding: 1rem 0;}
+  &-chat {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    //padding: 1rem 1rem 3rem 1rem;
+  }
+  &[aria-hidden="true"] {transform: translateX(100%)}
   &-message {
     background: $blue;
     color: white;
@@ -38,12 +45,7 @@ $messenger_width: 40rem;
 
   &-input {
     background: white;
-    height: 5rem;
-    min-height: 5rem;
-    textarea, button {
-      height:100%;
-      max-height: 100%;
-    }
+    button {height:100%;}
     textarea {
       border: 1px solid $grey_light;
       border-radius: .3rem;
@@ -51,3 +53,12 @@ $messenger_width: 40rem;
     }
   }
 }
+.colibri .scrollarea {
+  padding-right: 1rem;
+  height: 100%;
+}
+.colibri .scrollarea .scrollbar-container.vertical .scrollbar {width: 0.35rem;border-radius: 1.5rem;opacity: 0.8;}
+.colibri .scrollarea .scrollbar-container {opacity: 0;}
+.colibri .scrollarea:hover .scrollbar-container {opacity: .15;}
+.colibri .scrollarea .scrollbar-container.active, .colibri .scrollarea .scrollbar-container:hover {background: #ededed;opacity: .6!important;}
+.colibri .scrollarea .scrollbar-container.vertical {width: .35rem;}

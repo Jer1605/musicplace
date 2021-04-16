@@ -13,13 +13,6 @@ const Class: React.FunctionComponent = () => {
                     <img className={'mb-5'} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqL5qthMzUhxj8OXgxtB5JyqvYFnwKsakOw&usqp=CAU'} />
                 </div>
                 <div className={'mosaic-item'} data-amplitud={'grow'}>
-                    <div className={'rate'}>
-                        <FontAwesomeIcon icon={['fas', 'star']} style={{color: "#ffdf01"}} />
-                        <FontAwesomeIcon icon={['fas', 'star']} style={{color: "#ffdf01"}} />
-                        <FontAwesomeIcon icon={['fas', 'star']} style={{color: "#ffdf01"}} />
-                        <FontAwesomeIcon icon={['fas', 'star']} style={{color: "#ffdf01"}} />
-                        <FontAwesomeIcon icon={['fas', 'star-half']} style={{color: "#ffdf01"}} />
-                    </div>
                     <div className={'price mt-3'}><strong>Precio:</strong> 30€ / 45mn</div>
                     <div className={'detail-data mt-3'}>
                         <p className={'detail-date'}><strong>14.04.2021</strong> - Madrid - Cours de guitare</p>
@@ -32,7 +25,6 @@ const Class: React.FunctionComponent = () => {
                         </p>
                         <div className={'class-actions'}>
                             <button className={'mt-3 mr-2'}><FontAwesomeIcon icon={['fas', 'comment']} /> Contactar</button>
-                            <button className={'mt-3'}><FontAwesomeIcon icon={['fas', 'star']} /> Dejar una aviso</button>
                         </div>
                     </div>
                 </div>
