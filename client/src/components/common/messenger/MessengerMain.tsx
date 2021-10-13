@@ -3,6 +3,7 @@ import Messages from "./Messages";
 import ChatInput from "./ChatInput";
 import ScrollArea from 'react-scrollbar';
 import Contact from "./Contact";
+import {ReactComponent} from "*.svg";
 
 type MessengerMainProps = {
     hidden: boolean;
@@ -15,21 +16,10 @@ const MessengerMain: React.FunctionComponent<MessengerMainProps> = ({hidden}: Me
 
     }
 
-    return <div className={'messenger'} aria-hidden={hidden}>
+    return <React.Fragment>
         <ScrollArea>
             <div className={'messenger-sessions'}>
 
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
                     <Contact />
                     <Contact />
                     <Contact />
@@ -54,7 +44,7 @@ const MessengerMain: React.FunctionComponent<MessengerMainProps> = ({hidden}: Me
             </div>
             <ChatInput handleSend={handleSend} />
         </div>
-    </div>
+    </React.Fragment>
 }
 
 export default MessengerMain;

@@ -13,6 +13,7 @@ import {
     faStarHalf,
     faKiwiBird,
     faUsers,
+    faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -29,4 +30,5 @@ library.add(
     faStarHalf,
     faKiwiBird,
     faUsers,
+    faTimes,
 );

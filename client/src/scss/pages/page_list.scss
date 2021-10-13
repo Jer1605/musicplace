@@ -1,12 +1,10 @@
 @import "src/scss/variables";
 .musicians {
   &-search{
-    color: white;
     &-label {
-      color: white;
       margin-bottom: .5rem;
     }
-    background: $color1;
+    background: $color1_light;
     padding: $spacer-medium;
     border-radius: .2rem;
     margin-bottom: $spacer-big;

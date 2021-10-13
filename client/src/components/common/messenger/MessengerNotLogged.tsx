@@ -13,12 +13,12 @@ const MessengerNotLogged: React.FunctionComponent<MessengerNotLoggedProps> = ({h
     const history = useHistory();
     const loginRedirect = () =>  {history.push('/login')}
 
-    return <div className={'messenger messenger-login'} aria-hidden={hidden}>
+    return <React.Fragment>
         <h1>Mensajes</h1>
         <div className={'text-center absolute-centered'}>
             <button onClick={loginRedirect}><FontAwesomeIcon className={'mr-1'} icon={['fas', 'lock']} /> Enviar un mensaje</button>
         </div>
-    </div>
+    </React.Fragment>
 }
 
 export default MessengerNotLogged;

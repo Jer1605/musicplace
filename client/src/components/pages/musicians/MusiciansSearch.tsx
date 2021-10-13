@@ -13,6 +13,8 @@ const MusiciansSearch : React.FunctionComponent = () => {
             <div className={'mosaic-item'}>
                 <label className={'musicians-search-label'}>Soy</label>
                 <Select {...selectIam} />
+                <button className={'mt-2 mr-1 button-white'}>Envoyer</button>
+                <button className={'mt-2 button-blue'}>Envoyer</button>
             </div>
             <div className={'mosaic-item'}>
                 <label className={'musicians-search-label'}>Busco</label>

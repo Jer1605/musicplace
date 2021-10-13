@@ -8,7 +8,7 @@ html, body {
 #root, .colibri{min-height: 100vh}
 body{
   font-family: 'Roboto', sans-serif;
-
+  background: $bg-color;
   color: $color;
   overflow-x: hidden;
 }
@@ -79,9 +79,16 @@ a {
   font-size: 1.2rem;
   padding: .5rem 1.25rem;
   border-radius: .2rem;
-  background: $color3;
+  background: $color2;
   color: white;
   display: inline-block;
+}
+
+.closer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
 }
 
 // widths

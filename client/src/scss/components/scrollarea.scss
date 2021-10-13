@@ -1,0 +1,6 @@
+.colibri .scrollarea {padding-right: 1rem;height: 100%;}
+.colibri .scrollarea .scrollbar-container.vertical .scrollbar {width: 0.35rem;border-radius: 1.5rem;opacity: 0.8;}
+.colibri .scrollarea .scrollbar-container {opacity: 0;}
+.colibri .scrollarea:hover .scrollbar-container {opacity: .15;}
+.colibri .scrollarea .scrollbar-container.active, .colibri .scrollarea .scrollbar-container:hover {background: #ededed;opacity: .6!important;}
+.colibri .scrollarea .scrollbar-container.vertical {width: .35rem;}

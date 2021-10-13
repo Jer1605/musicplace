@@ -31,6 +31,15 @@ button {
   cursor: pointer;
   color: white;
   width: auto;
+  text-transform: uppercase;
+  &.button-black {
+    background: $color1;
+    color: white;
+  }
+  &.button-white {
+    background: white;
+    color: $color2;
+  }
 }
 
 input[type="date"].input {

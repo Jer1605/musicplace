@@ -12,7 +12,7 @@ import ClassesList from "./classes/ClassesList";
 const Home: React.FunctionComponent = () => {
     return(
         <div className={'home'}>
-            <section className={`intro intro-fixed bg-9`}>
+            <section className={`intro intro-fixed bg-${Math.floor(Math.random() * 11)}`}>
                 <div className={'absolute-centered search'}>
                     <div className={'container'}>
                     <div className={'mosaic'} data-halign={'center'}>
@@ -36,7 +36,7 @@ const Home: React.FunctionComponent = () => {
                     <OffersList title={'Ofertas'} preview={true}  />
                 </div>
             </section>
-            <section className={`intro intro-small bg-${Math.floor(Math.random() * 14)}`}>
+            <section className={`intro intro-small bg-${Math.floor(Math.random() * 11)}`}>
                 <h1 className={'absolute-centered text-center intro-title'}>
                     <blockquote>
                         <p>Encuentra musicos, busca material, apuntate a una clase o vete a conciertos en Madrid !</p>

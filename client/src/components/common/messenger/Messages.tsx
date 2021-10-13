@@ -9,7 +9,7 @@ const Messages: React.FunctionComponent<MessagesProps> = ({messages}: MessagesPr
     return <div className={'messenger-messages'}>
                 <Message content={'Salut !'} guest={true} />
                 <Message content={'Oh ! Ca roule ?'} />
-                <Message content={'tu deviens quoi ?'} />
+                <Message content={'tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?tu deviens quoi ?'} />
                 <Message content={'tranquille'} guest={true}/>
                 <Message content={'tranquiaaaaaaaaalle'} guest={true}/>
                 <Message content={'tranqddddddddduille'} guest={true}/>
