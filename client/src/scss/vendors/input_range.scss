@@ -1,6 +1,6 @@
 @import "../variables";
 $input-range-font-family: 'Helvetica Neue', san-serif !default;
-$input-range-primary-color: $color1 !default;
+$input-range-primary-color: $color2 !default;
 $input-range-neutral-color: $color !default;
 $input-range-neutral-light-color: #eeeeee !default;
 $input-range-disabled-color: #cccccc !default;
@@ -135,5 +135,5 @@ $input-range-track-disabled-background: $input-range-neutral-light-color !defaul
   height: $input-range-slider-height;
   position: relative;
   width: 100%;
-  margin-top: .5rem;
+  margin-top: 1rem;
 }

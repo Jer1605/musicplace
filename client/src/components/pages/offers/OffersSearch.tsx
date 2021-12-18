@@ -41,16 +41,19 @@ const OffersSearch : React.FunctionComponent = () => {
     }
 
     return <div className={'musicians-search'}>
-        <div className={'mosaic'} data-space={4}>
-            <div className={'mosaic-item'} data-size={50}>
+        <div className={'mosaic'} data-space={2}>
+            <div className={'mosaic-item'} data-size={45}>
                 <label className={'musicians-search-label'}>Busco</label>
                 <div className={'input-icon'}>
                     <FontAwesomeIcon icon={['fas', 'search']} />
                     <input type={'text'} className={'input'} placeholder={'Guitara, Amplificador, Bajo...'} />
                 </div>
             </div>
-
-            <div className={'mosaic-item'} data-size={20}>
+            <div className={'mosaic-item'} data-size={30}>
+                <label className={'musicians-search-label'}>Provincia</label>
+                <Select {...spainCities.provinces} />
+            </div>
+            <div className={'mosaic-item ml-2'} data-size={15}>
                 <label className={'musicians-search-label'}>Precio</label>
                 <InputRange
                     formatLabel={value => value === 5000 ? `5000€+` : `${value}€`}
@@ -61,9 +64,8 @@ const OffersSearch : React.FunctionComponent = () => {
                     onChangeComplete={range => console.log(range)}
                 />
             </div>
-            <div className={'mosaic-item'} data-size={30}>
-                <label className={'musicians-search-label'}>Provincia</label>
-                <Select {...spainCities.provinces} />
+            <div className={'mosaic-item'} data-dock={'right'}>
+                <button className={'button-blue full-height'}><FontAwesomeIcon icon={['fas', 'search']} className={''} /></button>
             </div>
         </div>
     </div>;

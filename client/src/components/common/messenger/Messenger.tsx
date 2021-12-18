@@ -7,7 +7,7 @@ import Closer from "../Closer";
 
 const Messenger: React.FunctionComponent = () => {
     const logged = true;
-    const [hidden, setHidden] = React.useState(false);
+    const [hidden, setHidden] = React.useState(true);
 
     return <div className={'messenger'} aria-hidden={hidden}>
         <Closer callback={() => {setHidden(true)}} />

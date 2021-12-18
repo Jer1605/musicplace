@@ -15,6 +15,7 @@ import Class from "./components/pages/classes/Class";
 import Show from "./components/pages/shows/Show";
 import Offer from "./components/pages/offers/Offer";
 import Dashboard from "./components/pages/dashboard/Dashboard";
+import PrivateRoute from "./components/common/ProtectedRoute";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
                     <Route exact path='/conciertos'><Shows /></Route>
                     <Route exact path='/conciertos/concierto_id'><Show /></Route>
                     <Route exact path='/login'><Login /></Route>
-                    <Route exact path='/micuenta'><Dashboard /></Route>
+                    <Route exact path='/micuenta'><PrivateRoute component={Dashboard} /></Route>
                 </Switch>
             </div>
             <Footer />

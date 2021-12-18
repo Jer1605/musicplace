@@ -19,17 +19,15 @@ const MessengerMain: React.FunctionComponent<MessengerMainProps> = ({hidden}: Me
     return <React.Fragment>
         <ScrollArea>
             <div className={'messenger-sessions'}>
-
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-                    <Contact />
-
+                <Contact />
+                <Contact />
+                <Contact />
+                <Contact />
+                <Contact />
+                <Contact />
+                <Contact />
+                <Contact />
+                <Contact />
             </div>
         </ScrollArea>
         <div className={'messenger-chat'}>

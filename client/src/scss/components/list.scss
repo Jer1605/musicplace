@@ -3,7 +3,7 @@
 .list {
   &-item {
     position: relative;
-
+    strong {color: $color2;}
   }
   &-description{
 
@@ -16,7 +16,7 @@
         content: "";
         width: calc(100% + 5rem);
         height: calc(100% + 2rem);
-        background: $color1_light;
+        background: $color2_light;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

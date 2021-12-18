@@ -4,26 +4,25 @@ import Select from "react-select";
 import selectIam from '../../../config/selects/iam';
 import selectStatus from '../../../config/selects/status';
 import musicalStyles from '../../../config/selects/styles';
-import '../../../scss/pages/page_list.scss';
+
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const MusiciansSearch : React.FunctionComponent = () => {
 
-    return <div className={'musicians-search'}>
-        <div className={'mosaic'} data-size={'1/3'} data-space={4}>
-            <div className={'mosaic-item'}>
+    return <div className={'search musicians-search'}>
+        <div className={'mosaic'} data-space={2}>
+            <div className={'mosaic-item'} data-size={20}>
                 <label className={'musicians-search-label'}>Soy</label>
                 <Select {...selectIam} />
-                <button className={'mt-2 mr-1 button-white'}>Envoyer</button>
-                <button className={'mt-2 button-blue'}>Envoyer</button>
             </div>
-            <div className={'mosaic-item'}>
+            <div className={'mosaic-item'} data-size={35}>
                 <label className={'musicians-search-label'}>Busco</label>
                 <div className={'mosaic'}>
                     <div className={'mosaic-item'} data-amplitud={'grow'}><Select {...selectIam} /></div>
                     <div className={'mosaic-item'} data-amplitud={'grow'}><Select {...selectStatus} /></div>
                 </div>
             </div>
-            <div className={'mosaic-item'}>
+            <div className={'mosaic-item'} data-size={40}>
                 <label className={'musicians-search-label'}>Styles</label>
                 <div className={'mosaic-item'}>
                     <div className={'mosaic'} data-wrap={'wrap'}>
@@ -33,6 +32,9 @@ const MusiciansSearch : React.FunctionComponent = () => {
                         </div>)}
                     </div>
                 </div>
+            </div>
+            <div className={'mosaic-item'} data-dock={'right'}>
+                <button className={'button-blue full-height'}><FontAwesomeIcon icon={['fas', 'search']} className={''} /></button>
             </div>
         </div>
     </div>;

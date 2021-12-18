@@ -4,9 +4,22 @@
     &-label {
       margin-bottom: .5rem;
     }
-    background: $color1_light;
-    padding: $spacer-medium;
+    padding: $spacer-medium 0;
     border-radius: .2rem;
-    margin-bottom: $spacer-big;
+    margin-bottom: $spacer-medium;
+  }
+}
+
+.search {
+  position: relative;
+  &:after {
+    content: "";
+    width: 20%;
+    height: 0.1rem;
+    background: $color1_light;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

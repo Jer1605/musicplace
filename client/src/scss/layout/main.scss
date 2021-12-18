@@ -91,6 +91,19 @@ a {
   cursor: pointer;
 }
 
+.bg-store{background: url('../../ressources/global/shop-1.jpg');}
+.bg-yawil{background: url('../../ressources/global/yawyl-1.jpg');}
+@for $i from 0 through 10 {
+  .pl-#{$i} {padding-left: #{$i}rem}
+  .pr-#{$i} {padding-right: #{$i}rem}
+  .pt-#{$i} {padding-top: #{$i}rem}
+  .pb-#{$i} {padding-bottom: #{$i}rem}
+  .ml-#{$i} {margin-left: #{$i}rem}
+  .mr-#{$i} {margin-right: #{$i}rem}
+  .mt-#{$i} {margin-top: #{$i}rem}
+  .mb-#{$i} {margin-bottom: #{$i}rem}
+}
+
 // widths
 @each $key, $value in $w-widths {
   .w-#{$key} {width: $value;}

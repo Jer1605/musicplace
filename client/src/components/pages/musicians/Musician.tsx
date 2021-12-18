@@ -10,17 +10,17 @@ const Musician: React.FunctionComponent = () => {
         </section>
 
         <section className={'section container'}>
-            <div className={'breadcrumbs grey mb-5'}>Musicos / musicos_id</div>
-            <div className={'mosaic mb-4'} data-valign={'center'}>
+            <div className={'breadcrumbs grey'}>Musicos / musicos_id</div>
+            <div className={'mosaic mb-2'} data-valign={'center'}>
                 <div className={'mosaic-item'}><span className={'label'}>PRO</span></div>
                 <div className={'mosaicèitem'}><h1 className={'mb-0'}>Title of the announce</h1></div>
             </div>
-            <div className={'mosaic'} data-space={5}>
-                <div className={'mosaic-item'} data-size={35}>
-                    <img className={'mb-5'} src={'https://www.eventosbarcelona.com/wp-content/uploads/musicband2.jpg'} />
+            <div className={'mosaic'} data-space={2}>
+                <div className={'mosaic-item'} data-size={40}>
+                    <img src={'https://www.eventosbarcelona.com/wp-content/uploads/musicband2.jpg'} />
                 </div>
                 <div className={'mosaic-item'} data-amplitud={'grow'}>
-                    <div className={'detail-data mt-3'}>
+                    <div className={'detail-data'}>
                         <p className={'detail-date'}><strong>14.04.2021</strong> - Madrid - Chanteur/Chanteuse cherche Batteur</p>
                         <p className={'detail-styles'}>Pop, Jazz, Groove, Reggae, World, Electro</p>
                         <p className={'description'}>
@@ -29,7 +29,7 @@ const Musician: React.FunctionComponent = () => {
                             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
                             optio...
                         </p>
-                        <button className={'mt-3'}><FontAwesomeIcon icon={['fas', 'comment']} /> Contactar</button>
+                        <button className={'mt-1'}><FontAwesomeIcon icon={['fas', 'comment']} /> Contactar</button>
                     </div>
                 </div>
             </div>

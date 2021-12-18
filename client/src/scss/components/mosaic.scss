@@ -83,6 +83,7 @@
     &[data-amplitud="shrink"], .mosaic[data-amplitud="shrink"] & {flex-shrink: 2;}
 
     &[data-dock="right"] {margin-left: auto;}
+    &[data-dock="left"] {margin-right: auto;}
   }
 
 }

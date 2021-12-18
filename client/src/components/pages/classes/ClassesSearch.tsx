@@ -5,6 +5,7 @@ import spainCities from '../../../config/selects/spain';
 import instruments from '../../../config/selects/iam';
 import '../../../scss/pages/page_list.scss';
 import InputRange, {Range} from 'react-input-range';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 type SelectOption = {label: string, value: string};
@@ -43,12 +44,16 @@ const ClassesSearch : React.FunctionComponent = () => {
     }
 
     return <div className={'musicians-search'}>
-        <div className={'mosaic'} data-space={4}>
-            <div className={'mosaic-item'} data-size={40}>
+        <div className={'mosaic'} data-space={2}>
+            <div className={'mosaic-item'} data-size={45}>
                 <label className={'musicians-search-label'}>Instrumento</label>
                 <Select {...instruments} />
             </div>
-            <div className={'mosaic-item'} data-size={20}>
+            <div className={'mosaic-item'} data-size={30}>
+                <label className={'musicians-search-label'}>Provincia</label>
+                <Select {...spainCities.provinces} />
+            </div>
+            <div className={'mosaic-item ml-2'} data-size={15}>
                 <label className={'musicians-search-label'}>Precio por hora</label>
                 <InputRange
                     formatLabel={value => value === 50 ? `50€+` : `${value}€`}
@@ -59,9 +64,8 @@ const ClassesSearch : React.FunctionComponent = () => {
                     onChangeComplete={range => console.log(range)}
                 />
             </div>
-            <div className={'mosaic-item'} data-size={40}>
-                <label className={'musicians-search-label'}>Provincia</label>
-                <Select {...spainCities.provinces} />
+            <div className={'mosaic-item'} data-dock={'right'}>
+                <button className={'button-blue full-height'}><FontAwesomeIcon icon={['fas', 'search']} className={''} /></button>
             </div>
         </div>
     </div>;
