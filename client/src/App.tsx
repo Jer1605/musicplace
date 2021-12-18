@@ -16,6 +16,7 @@ import Show from "./components/pages/shows/Show";
 import Offer from "./components/pages/offers/Offer";
 import Dashboard from "./components/pages/dashboard/Dashboard";
 import PrivateRoute from "./components/common/ProtectedRoute";
+import DashboardMusicians from "./components/pages/dashboard/DashboardMusicians";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
                     <Route exact path='/conciertos/concierto_id'><Show /></Route>
                     <Route exact path='/login'><Login /></Route>
                     <Route exact path='/micuenta'><PrivateRoute component={Dashboard} /></Route>
+                    <Route exact path='/micuenta/musicos'><PrivateRoute component={DashboardMusicians} /></Route>
                 </Switch>
             </div>
             <Footer />

@@ -93,7 +93,8 @@ a {
 
 .bg-store{background: url('../../ressources/global/shop-1.jpg');}
 .bg-yawil{background: url('../../ressources/global/yawyl-1.jpg');}
-@for $i from 0 through 10 {
+
+@for $i from 0 through 9 {
   .pl-#{$i} {padding-left: #{$i}rem}
   .pr-#{$i} {padding-right: #{$i}rem}
   .pt-#{$i} {padding-top: #{$i}rem}
@@ -102,6 +103,15 @@ a {
   .mr-#{$i} {margin-right: #{$i}rem}
   .mt-#{$i} {margin-top: #{$i}rem}
   .mb-#{$i} {margin-bottom: #{$i}rem}
+
+  .pl-#{$i}5 {padding-left: #{$i+0.5}rem}
+  .pr-#{$i}5 {padding-right: #{$i+0.5}rem}
+  .pt-#{$i}5 {padding-top: #{$i+0.5}rem}
+  .pb-#{$i}5 {padding-bottom: #{$i+0.5}rem}
+  .ml-#{$i}5 {margin-left: #{$i+0.5}rem}
+  .mr-#{$i}5 {margin-right: #{$i+0.5}rem}
+  .mt-#{$i}5 {margin-top: #{$i+0.5}rem}
+  .mb-#{$i}5 {margin-bottom: #{$i+0.5}rem}
 }
 
 // widths

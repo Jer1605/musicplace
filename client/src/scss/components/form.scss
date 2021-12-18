@@ -1,3 +1,4 @@
+textarea:not([type="radio"]):not([type="checkbox"]) {border: .1rem solid $grey_light}
 .input, button {
   color: $color;
   background: white;
@@ -5,6 +6,7 @@
   border-radius: .25rem;
   border: none;
   width: 100%;
+  &[type="text"]:not([type="radio"]):not([type="checkbox"]),
   &[type="text"]:not([type="radio"]):not([type="checkbox"]),
   &[type="date"]:not([type="radio"]):not([type="checkbox"]) {border: .1rem solid $grey_light}
   &.input-shadow {box-shadow: 0 0 1rem .25rem rgba(255, 255, 255, 0.2);}

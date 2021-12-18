@@ -1,5 +1,6 @@
 const options = [
-    {label: 'Professional', value: 'professional'},
+    {label: 'Profesional', value: 'profesional'},
+    {label: 'Semi-profesional', value: 'semi-profesional'},
     {label: 'Amator', value: 'amator'},
 ];
 
