@@ -17,6 +17,8 @@ import Offer from "./components/pages/offers/Offer";
 import Dashboard from "./components/pages/dashboard/Dashboard";
 import PrivateRoute from "./components/common/ProtectedRoute";
 import DashboardMusicians from "./components/pages/dashboard/DashboardMusicians";
+import MusicianForm from "./components/pages/dashboard/forms/MusicianForm";
+import DashboardMusician from "./components/pages/dashboard/DashboardMusician";
 
 function App() {
   return (
@@ -33,10 +35,11 @@ function App() {
                     <Route exact path='/cursos'><Classes /></Route>
                     <Route exact path='/cursos/:id'><Class /></Route>
                     <Route exact path='/conciertos'><Shows /></Route>
-                    <Route exact path='/conciertos/concierto_id'><Show /></Route>
+                    <Route exact path='/conciertos/:id'><Show /></Route>
                     <Route exact path='/login'><Login /></Route>
                     <Route exact path='/micuenta'><PrivateRoute component={Dashboard} /></Route>
                     <Route exact path='/micuenta/musicos'><PrivateRoute component={DashboardMusicians} /></Route>
+                    <Route exact path='/micuenta/musicos/:id'><PrivateRoute component={DashboardMusician} /></Route>
                 </Switch>
             </div>
             <Footer />

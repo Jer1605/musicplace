@@ -2,9 +2,10 @@ import React from "react";
 import musicalStyles from '../../../../config/selects/styles';
 import selectIam from '../../../../config/selects/iam';
 import selectStatus from '../../../../config/selects/status';
+import selectSpain from '../../../../config/selects/spain';
 import Select from "react-select";
 
-const Account = () => {
+const AccountForm = () => {
     return <form>
         <h2>Sobre tu</h2>
         <section className={'form-section form-section-you mosaic'} data-space={4} data-size={'1/2'}>
@@ -38,7 +39,7 @@ const Account = () => {
                 </div>
                 <div className={'form-line mosaic'} data-valign={'center'}>
                     <div data-size={30} className={'mosaic-item'}><label>City: </label></div>
-                    <div data-size={70} className={'mosaic-item'}><input className={'input'} type={'text'} placeholder={'City'}/></div>
+                    <div data-size={70} className={'mosaic-item'}><Select {...selectSpain.provinces} /></div>
                 </div>
                 <div className={'form-line mosaic'} data-valign={'center'}>
                     <div data-size={30} className={'mosaic-item'}><label>Codigo postal: </label></div>
@@ -103,4 +104,4 @@ const Account = () => {
     </form>
 }
 
-export default Account;
+export default AccountForm;

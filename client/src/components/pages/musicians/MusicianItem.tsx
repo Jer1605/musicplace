@@ -13,9 +13,9 @@ type MusicianItemProps = {
 const MusicianItem : React.FunctionComponent<MusicianItemProps> = ({preview, edit}: MusicianItemProps) => {
     return (
         <div className={'list-item'}>
-            <Card link={edit ? '/micuenta/Musicos/musicos_id' : 'musicos/musicos_id'}>
+            <Card link={edit ? '/micuenta/musicos/musicos_id' : 'musicos/musicos_id'}>
                 <div className={'mosaic'} data-space={2}>
-                    <div className={'mosaic-item'} data-size={!preview ? 10 : ''}>
+                    <div className={`mosaic-item ${!preview ? 'mr-2' : null}`}>
                         <RoundedImage image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqL5qthMzUhxj8OXgxtB5JyqvYFnwKsakOw&usqp=CAU'} />
                     </div>
                     <div className={'mosaic-item'} data-size={!preview ? 30 : ''} data-amplitud={preview ? 'grow' : ''}>

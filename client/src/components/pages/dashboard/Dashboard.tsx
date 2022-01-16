@@ -1,6 +1,6 @@
 import React from "react";
 import DashboardMenu from "./DashboardMenu";
-import Account from "./forms/Account";
+import AccountForm from "./forms/AccountForm";
 
 
 const Dashboard: React.FunctionComponent = () => {
@@ -11,7 +11,7 @@ const Dashboard: React.FunctionComponent = () => {
         <section className={'section'}>
             <div className={'container'}>
                 <DashboardMenu />
-                <Account />
+                <AccountForm />
             </div>
         </section>
     </section>
