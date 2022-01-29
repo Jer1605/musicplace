@@ -4,6 +4,7 @@ import selectIam from '../../../../config/selects/iam';
 import selectStatus from '../../../../config/selects/status';
 import selectSpain from '../../../../config/selects/spain';
 import Select from "react-select";
+import ImageUploader from "../../../common/ImageUploader";
 
 const AccountForm = () => {
     return <form>
@@ -57,7 +58,7 @@ const AccountForm = () => {
             <div className={'mosaic-item'}>
                 <div className={'form-line mosaic'} data-valign={'center'}>
                     <div data-size={30} className={'mosaic-item'}><label>Foto: </label></div>
-                    <div data-size={70} className={'mosaic-item'}><input className={'input'} type={'file'} placeholder={'photo'}/></div>
+                    <div data-size={70} className={'mosaic-item'}><ImageUploader /></div>
                 </div>
                 <div className={'form-line mosaic'}>
                     <div data-size={30} className={'mosaic-item'}><label>Estilos: </label></div>

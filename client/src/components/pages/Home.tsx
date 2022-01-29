@@ -1,13 +1,13 @@
 import React from "react";
-import '../../scss/pages/home.scss';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Select from "react-select";
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
+import '../../scss/pages/home.scss';
 
 import selectCategories from "../../config/selects/categories";
 import MusiciansList from "./musicians/MusiciansList";
-import OffersList from "./offers/OffersList";
 import ShowsList from "./shows/ShowsList";
-import ClassesList from "./classes/ClassesList";
 
 const Home: React.FunctionComponent = () => {
     return(
@@ -31,9 +31,19 @@ const Home: React.FunctionComponent = () => {
                 </div>
             </section>
             <section className={'container section'}>
-                <div className={'grid grid-cols-2 gap-200'}>
-                    <MusiciansList title={'Musicos y bandas'} preview={true} />
-                    <OffersList title={'Ofertas'} preview={true}  />
+                <div className={'grid grid-cols-2 gap-x-200'}>
+                    <div>
+                        <MusiciansList title={'Ultimos anuncios'} preview={true} />
+                        <div className={'text-center mt-3'}>
+                            <Link to={'/musicos/new'}><button>Añadir un anucio</button></Link>
+                        </div>
+                    </div>
+                    <div>
+                        <MusiciansList title={'Jam sessiones'} preview={true} />
+                        <div className={'text-center mt-3'}>
+                            <Link to={'/jamsession/new'}><button>Anunciar una Jam session</button></Link>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className={`intro intro-small bg-5`}>
@@ -44,9 +54,12 @@ const Home: React.FunctionComponent = () => {
                 </h1>
             </section>
             <section className={'container section'}>
-                <div className={'grid grid-cols-2 gap-200'}>
-                    <ShowsList title={'Conciertos'} preview={true} />
-                    <ClassesList title={'Cursos'} preview={true} />
+                <div className={'grid grid-cols-2 gap-x-200'}>
+                    <ShowsList title={'Proximos conciertos'} preview={true} />
+                    <ShowsList title={'Conciertos con exito'} preview={true} />
+                </div>
+                <div className={'text-center mt-3'}>
+                    <Link to={'/conciertos/new'}><button>Añadir mi concierto</button></Link>
                 </div>
             </section>
         </div>

@@ -1,8 +1,14 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-    faMapMarkerAlt,
     faUser,
+    faHeart,
+    faPlus,
+    faTrash,
+    faPlusCircle,
+    faMusic,
+    faEuroSign,
     faSearch,
+    faMapMarkerAlt,
     faChevronRight,
     faChevronLeft,
     faLock,
@@ -10,6 +16,7 @@ import {
     faCommentAlt,
     faHandSparkles,
     faUserCog,
+    faCog,
     faStar,
     faStarHalf,
     faKiwiBird,
@@ -17,8 +24,23 @@ import {
     faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 
+import {
+    faHeart as farHeart,
+    faStar as farStar,
+    faImages as farImages
+} from '@fortawesome/free-regular-svg-icons';
+
 library.add(
+    faEuroSign,
+    farHeart,
+    farImages,
+    faTrash,
+    farStar,
     faUser,
+    faHeart,
+    faPlus,
+    faPlusCircle,
+    faMusic,
     faSearch,
     faMapMarkerAlt,
     faChevronRight,
@@ -28,6 +50,7 @@ library.add(
     faCommentAlt,
     faHandSparkles,
     faUserCog,
+    faCog,
     faStar,
     faStarHalf,
     faKiwiBird,

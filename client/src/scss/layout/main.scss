@@ -94,6 +94,10 @@ a {
 .bg-store{background: url('../../ressources/global/shop-1.jpg');}
 .bg-yawil{background: url('../../ressources/global/yawyl-1.jpg');}
 
+.inline {
+  display: inline;
+  &-bl {display: inline-block;}
+}
 @for $i from 0 through 9 {
   .pl-#{$i} {padding-left: #{$i}rem}
   .pr-#{$i} {padding-right: #{$i}rem}
@@ -113,6 +117,7 @@ a {
   .mt-#{$i}5 {margin-top: #{$i+0.5}rem}
   .mb-#{$i}5 {margin-bottom: #{$i+0.5}rem}
 }
+.ml-auto {margin-left: auto;}
 
 // widths
 @each $key, $value in $w-widths {

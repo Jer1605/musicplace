@@ -1,0 +1,11 @@
+@import "../variables";
+
+.iu {
+  &-dropzone{
+    background: transparent;
+    color: $color2;
+    border: .2rem dashed;
+    padding: 4rem;
+    width: 100%;
+  }
+}
